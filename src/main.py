@@ -1,16 +1,8 @@
-from textnode import TextNode, TextType
+from textnode import TextNode
 
 def main():
-    dict = {
-        "key" : "value"
-    }
-
-    def print_method(d):
-        for key in d:
-            print(f"{key} and {d[key]}")
-        return
-    
-    print_method(dict)
+    node = TextNode("This is a text node", "bold", "https://www.boot.dev")
+    print(node)
 
 if __name__ == "__main__":
     main()
